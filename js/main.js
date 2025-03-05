@@ -5,6 +5,11 @@ import { Animation2 } from './animations/animation2.js';
 import { Animation3 } from './animations/animation3.js';
 import { Animation4 } from './animations/animation4.js';
 import { Animation5 } from './animations/moneyTransfer.js';
+import { Animation6 } from './animations/luandaLeaks.js';
+import { Animation7 } from './animations/privilegeAndPower.js';
+import { Animation8 } from './animations/unravelingThread.js';
+import { Animation9 } from './animations/brickByBrick.js';
+import { Animation10 } from './animations/profileConnection.js';
 
 class App {
   constructor() {
@@ -27,7 +32,12 @@ class App {
       'animation-2': new Animation2(this.scene),
       'animation-3': new Animation3(this.scene),
       'animation-4': new Animation4(this.scene),
-      'animation-5': new Animation5(this.scene)
+      'animation-5': new Animation5(this.scene),
+      'animation-6': new Animation6(this.scene),
+      'animation-7': new Animation7(this.scene),
+      'animation-8': new Animation8(this.scene),
+      'animation-9': new Animation9(this.scene),
+      'animation-10': new Animation10(this.scene)
     };
     
     this.bindEvents();
@@ -74,6 +84,11 @@ class App {
     document.getElementById('animation-3').addEventListener('click', () => this.switchAnimation('animation-3'));
     document.getElementById('animation-4').addEventListener('click', () => this.switchAnimation('animation-4'));
     document.getElementById('animation-5').addEventListener('click', () => this.switchAnimation('animation-5'));
+    document.getElementById('animation-6').addEventListener('click', () => this.switchAnimation('animation-6'));
+    document.getElementById('animation-7').addEventListener('click', () => this.switchAnimation('animation-7'));
+    document.getElementById('animation-8').addEventListener('click', () => this.switchAnimation('animation-8'));
+    document.getElementById('animation-9').addEventListener('click', () => this.switchAnimation('animation-9'));
+    document.getElementById('animation-10').addEventListener('click', () => this.switchAnimation('animation-10'));
     
     // Start with first animation
     this.switchAnimation('animation-1');
